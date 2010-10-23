@@ -101,6 +101,16 @@ strong {
     margin-top: 1em;
 }
 
+#main ol {
+    margin-bottom: .5em;
+}
+
+#main ol li {
+    list-style-type: decimal;
+    margin-left: 1.5em;
+    font-size: 1.5em;
+}
+
 #side p {
     font-size: 1.3em;
     margin-bottom: 1em;
