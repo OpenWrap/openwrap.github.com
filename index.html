@@ -1,22 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>OpenWrap</title>
-        <style type="text/css">
-            body { font-family: Arial, Sans-Serif; }
-        </style>
-    </head>
-    <body>
-        <div id="wrap" style="text-align: center">
+<head>
+    <title>OpenWrap - Package management for .NET</title>
+    <link href="http://yui.yahooapis.com/2.8.0r4/build/reset/reset-min.css" rel="stylesheet" type="text/css" />
+    <link href="site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+        </div>
+        <div id="main">
+            <h1>
+                OpenWrap is the premier
+                <a href="http://en.wikipedia.org/wiki/Package_manager">package manager</a> for .NET.</h1>
             <p>
-                <img src="logo-huge.jpg" alt="OpenWrap Logo"/>
+                Any .NET project beyond "hello world" is going to require external libraries and
+                tools. There's an abundance of free, open source libraries out there, but how do
+                you get what you need? Manually searching, downloading (and in some cases building
+                from source) is not a productive use of your time. It's even worse when one library
+                depends on another and you have to manage dependency chains!
             </p>
             <p>
-                Coming soon, a package manager for .net
+                The solution: <strong>OpenWrap</strong></p>
+            <p>
+                For example, say you want to use NHibernate in your project. Simply run this at
+                the command line:</p>
+            <code>
+                <pre>c:\myproject&gt; o add-wrap nhibernate</pre>
+            </code>
+            <p>
+                OpenWrap will query available repositories for the NHibernate "wrap" and download
+                it along with all the necessary dependencies, such as Castle.</p>
+            <p>
+                Wraps are simple zip files containing the binaries, tools and other useful content.
+                They are copied into your project in an x-copy friendly manner.</p>
+            <h2>Find out more</h2>
+            <p>
+                Sebastien Lambla, the creator of OpenWrap, writes about the project in his <a href="http://codebetter.com/blogs/sebastien_lambla/default.aspx">blog at CodeBetter.com</a>.
+            </p>
+            <p>There is a <a href="http://github.com/openrasta/openwrap/wiki">wiki</a> at GitHub. You should probably <a href="http://twitter.com/serialseb">follow seb on twitter</a> as well!</p>
+        </div>
+        <div id="side">
+            <div id="download">
+                <a class="install" href="#">Install OpenWrap</a>
+            </div>
+            <p>
+                Fork the code, read the wiki and report bugs at <a href="http://github.com/openrasta/openwrap">
+                    OpenWrap on GitHub</a>
             </p>
             <p>
-                More info at <a href="http://github.com/openrasta/openwrap">github.com/openrasta/openwrap</a>
+                OpenWrap is free, open source software (MIT License).</p>
+            <p>
+                It is primarily written and maintained by <a href="http://twitter.com/serialseb">Sebastien
+                    Lambla</a>, with help from <a href="http://twitter.com/andrewdavey">Andrew Davey</a>,
+                <a href="http://github.com/DanielIrvine">Daniel Irvine</a>, <a href="http://twitter.com/ryansroberts">
+                    Ryan Roberts</a> and <a href="http://github.com/trullock">trullock</a>.
             </p>
         </div>
-    </body>
+        <div id="footer">
+            &copy; 2007-2009 Caffeine IT & naughtyProd Ltd (http://www.caffeine-it.com)</div>
+    </div>
+</body>
 </html>
